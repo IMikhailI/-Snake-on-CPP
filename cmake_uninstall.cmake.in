@@ -1,0 +1,7 @@
+if(EXISTS "@CMAKE_INSTALL_PREFIX@/bin/brickgame")
+    file(REMOVE "@CMAKE_INSTALL_PREFIX@/bin/brickgame")
+    message(STATUS "Removed @CMAKE_INSTALL_PREFIX@/bin/brickgame")
+else()
+    message(STATUS "No installed brickgame binary found in @CMAKE_INSTALL_PREFIX@/bin/")
+endif() 
+
